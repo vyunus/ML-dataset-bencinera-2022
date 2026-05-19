@@ -1,1 +1,19 @@
-Aqui se adjuntaran los notebooks con los que se trabajó.
+Directorio de notebooks
+Descripción: Pipeline de Análisis y Modelado de Machine Learning 
+
+Contenido de la carpeta:
+
+- 01_exploratory_analysis.ipynb
+  Análisis exploratorio y modelado no supervisado (K-Means). Incluye el pipeline de limpieza, escalamiento de variables continuas y el descubrimiento de 4 perfiles de comportamiento de carga mediante el Método del Codo.
+
+- 02_supervised_modeling.ipynb
+  Entrenamiento del modelo predictivo (Random Forest) para clasificar la industria del cliente. Destaca la aplicación de un Estudio de Ablación (Ablation Study) que demuestra empíricamente el Principio de Parsimonia, aislando el portafolio de productos como el predictor definitivo y eliminando el ruido algorítmico del volumen.
+
+- 03_model_evaluation.ipynb
+  Auditoría técnica de los modelos. Calcula el Silhouette Score para evaluar la densidad del clustering, e implementa métricas robustas para clases desbalanceadas en el modelo supervisado (Accuracy, F1-Score Weighted y ROC-AUC One-vs-Rest).
+
+- 04_hyperparameter_optimization.ipynb
+  Optimización de la arquitectura del Random Forest mediante GridSearchCV. Búsqueda de hiperparámetros (max_depth, n_estimators) aplicando Validación Cruzada para maximizar la capacidad de generalización y prevenir el overfitting.
+
+- 05_final_analysis.ipynb
+  Resumen ejecutivo visual. Contiene la proyección espacial 2D mediante PCA de los clústeres de comportamiento (explicando el fenómeno de los outliers industriales) y el ranking de Importancia de Variables (Feature Importance) que revela los combustibles más determinantes del mercado.

@@ -1,7 +1,7 @@
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 
-def optimize_random_forest(X_train, y_train, cv=3):
+def optimize_random_forest(X_train, y_train, cv=5):
     """
     Ejecuta validación cruzada para encontrar los hiperparámetros óptimos.
     """
